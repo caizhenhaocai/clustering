@@ -1,0 +1,48 @@
+                                              ********************************************
+                                              **                                        **
+                                              **                SETTINGS                **
+                                              **                                        **
+                                              ********************************************
+
+
+PLEASE REFER TO THE DOCUMENTATION TO HAVE INFORMATION ABOUT THE PARAMETERS.
+
+- Only the lines beginning with a '#' are taken into account, feel free to add more stuff.
+- If the file is detected as corrupted (i.e. incorrect parameters), it will be regenerated.
+- Each value follows this syntax : #parameterName:value.
+- Float numbers must be written with dotes (0.3 or 2.938 and not 3,4).
+- The order does not matter.
+
+
+
+DATA
+
+#dataFileName:Book1.csv
+#useLastDataFile:YES
+
+
+ALGORITHM
+
+#algorithm:FUZZYART
+#vigilanceCriterion:0.9
+#irrelevantColumns:_ID|_REF|LineNumber|_NB|KEY|Key|SourceName|TIMESTAMP
+#merger:NO
+#mergerRate:0.1
+#train:NO
+#trainingFileName:training.csv
+
+
+EXPORT
+
+#exportTrades:YES
+#exportWeights:YES
+#exportLRWeights:YES
+#exportVariances:NO
+#exportDistances:NO
+#exportCompareToRC:NO
+#RCFile:rc.csv
+
+
+
+#regenerateSettings:NO
+
